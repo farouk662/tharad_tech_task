@@ -31,9 +31,12 @@ android {
     }
 
     buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+        getByName("release") {
+            isMinifyEnabled = false   // Disable code shrinking for easier debugging
+            isShrinkResources = false // Disable resource shrinking
+            signingConfig = signingConfigs.getByName("debug") // Use debug signing key
+        }
+        getByName("debug") {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
@@ -42,3 +45,7 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // Add OkHttp3 to fix ucrop missing classes issue
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")}
