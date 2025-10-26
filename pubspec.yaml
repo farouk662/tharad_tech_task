@@ -1,0 +1,98 @@
+name: tharad_flutter_task
+description: "A new Flutter project."
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+
+    #  Networking
+  dio:
+  pretty_dio_logger:
+
+    # Local Storage
+  hive_flutter:
+
+    #  State Management
+  flutter_bloc:
+  equatable:
+
+    #  Functional Programming & Utils
+  dartz:
+  get_it:
+  logger:
+
+    #  UI & Design
+  flutter_screenutil:
+  flutter_svg:
+  dotted_border:
+  pin_code_fields:
+  image_picker:
+  image_cropper:
+  cached_network_image:
+  modal_progress_hud_nsn:
+
+    #  Navigation
+  go_router:
+
+    #  Preview / Debug
+  device_preview:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+     - assets/images/
+     - assets/icons/
+     - assets/fonts/
+
+    # Fonts
+  fonts:
+    - family: Alexandria
+      fonts:
+        - asset: assets/fonts/Alexandria-Regular.ttf
+          weight: 400
+
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 800
